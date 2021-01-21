@@ -359,19 +359,15 @@
             </div>
             <div class="conteiner-sign">
                 <p class="join-tatile">Подпишитесь на рассылку</p>
-                <form>
+                <form class="form">
                     <label class="label-text">
-                        <input class="imput-text" type="email" name="username" placeholder="E-mail" />
+                        <div class="imput"><input class="imput-text" type="email" name="username" placeholder="E-mail" /></div>
                     </label>
-                    <button class="button-futter" type="submit">
-                            <span class="button-text">Подписаться</span>
-                            <span class="button-logotype">
-                                <svg class="logotype" width="24" height="24">
-                                    <use href="./img/symbol-defs.svg#icon-icon-send-1"></use>
-                                </svg>
-                            </span>
-                    </button>
-                </form>
+                <div class="button-sign"><button class="button-futter" type="submit"><p class="sign">Подписаться</p></button>
+                    <svg class="icon-fotter" width="24" height="24">
+                        <use href="./img/symbol-defs.svg#icon-icon-send-1"></use>
+                    </svg>
+                </div>
             </div> 
         </div>
     </footer>
@@ -382,6 +378,57 @@
                     <use href="./img/symbol-defs.svg#icon-vector"></use>
                 </svg>
             </button>
+            <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2> 
+            <div class="form-conteiner">
+                <form class="modal-form">
+                    <label>
+                        <div class="name-text">Имя</div>
+                        <div class="imput-conteiner">
+                            <input class="imput-modal" type="text" name="usename">
+                            <svg class="icon-modal" width="18" height="18">
+                                <use href="./img/symbol-defs.svg#icon-person-black-18dp-1-1"></use>
+                            </svg>
+                        </div>
+                    </label>
+                    <div class="conteiner-tel">
+                        <label class="label-conteiner">
+                            <div class="name-text">Телефон</div>
+                            <div class="imput-conteiner">
+                                <input class="imput-modal" type="tel" name="tel">
+                                <svg class="icon-modal" width="18" height="18">
+                                    <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1-1"></use>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="conteiner-email">
+                        <label>
+                            <div class="name-text">Почта</div>
+                            <div class="imput-conteiner">
+                                <input class="imput-modal" type="mail" name="mail">
+                                <svg class="icon-modal" width="18" height="18">
+                                    <use href="./img/symbol-defs.svg#icon-email-black-18dp-1-1"></use>
+                                </svg>
+                            </div>
+                        </label> </div>
+                    <div class="conteiner-feedbeck">
+                        <label>
+                            <div class="name-text">Комментарий</div> 
+                            <textarea class="textarea" name="feedback" rows="8" placeholder="Введите текст"></textarea>
+                        </label>
+                    </div>
+                    <div class="checkbox-conteiner">
+                        <label>
+                            <input  type="checkbox" name="hobby"  checked />
+                            Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a>
+                        </label>
+                    </div>
+                    <div class="button-modal"><button class="button-submit" type="submit">
+                            <p class="sign">Отправить</p>
+                        </button>
+                    </div>                
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
