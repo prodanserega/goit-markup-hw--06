@@ -653,7 +653,6 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.imput-text:hover,
 .imput-text:focus {
   outline: none;
   border-color: var(--button-bgc);
@@ -949,13 +948,17 @@ h3 {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 18px;
+  height: 18px;
 }
 
-.label-conteiner input:hover,
-.label-conteiner input:focus {
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
+.imput-modal:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.imput-modal:focus + .icon-modal {
+  fill: #2196f3;
 }
 
 .textarea {
@@ -983,10 +986,15 @@ h3 {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.textarea:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  outline: none;
+}
+
 .checkbox-conteiner {
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .button-modal {
@@ -1016,4 +1024,26 @@ h3 {
 .agreement-link {
   text-decoration-line: underline;
   color: var(--accent-text-color);
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.old-checkbox:checked ~ .checkbox-icon {
+  background-color: var(--button-bgc);
+  border: var(--button-bgc);
+  background-image: url(./img/icon-check.svg);
+  background-size: contain;
+}
+
+.checkbox-conteiner .text-checkbox {
+  margin-left: 31px;
 }
