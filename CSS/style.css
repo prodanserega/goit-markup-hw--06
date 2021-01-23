@@ -997,6 +997,28 @@ h3 {
   position: relative;
 }
 
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.old-checkbox:checked ~ .checkbox-icon {
+  background-color: var(--button-bgc);
+  border: var(--button-bgc);
+  background-image: url(./img/icon-check.svg);
+  background-size: contain;
+}
+
+.checkbox-conteiner .text-checkbox {
+  margin-left: 31px;
+}
+
 .button-modal {
   display: flex;
   justify-content: center;
