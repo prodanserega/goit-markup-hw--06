@@ -904,12 +904,12 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffff;
   cursor: pointer;
+  outline: none;
 }
 
 .close-icon:focus,
 .close-icon:hover {
   fill: #2196f3;
-  
 }
 
 .modal-text {
