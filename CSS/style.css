@@ -654,6 +654,7 @@ h3 {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--bgc-accent-text-color);
 }
 
 .imput-text:focus {
@@ -903,6 +904,11 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffff;
   cursor: pointer;
+}
+
+.close-icon:focus,
+.close-icon:hover {
+  fill: #2196f3;
   
 }
 
