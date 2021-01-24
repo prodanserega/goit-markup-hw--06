@@ -233,6 +233,7 @@ ul {
 .button {
   background-color: var(--accent-text-color);
   color: var(--bgc-accent-text-color);
+  border-color: #2196f3;
   font-family: inherit;
   font-style: normal;
   font: weight 700;
@@ -246,6 +247,8 @@ ul {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
+  outline-color: #2196f3;
+  cursor: pointer;
 }
 
 /*---------------------------наші переваги------------------------------*/
@@ -667,6 +670,8 @@ h3 {
   padding-left: 29px;
   padding-right: 62px;
   cursor: pointer;
+  border-color: #2196f3;
+  outline-color: #2196f3;
 }
 
 .imput {
@@ -898,6 +903,7 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffff;
   cursor: pointer;
+  
 }
 
 .modal-text {
@@ -993,18 +999,27 @@ h3 {
 }
 
 .label-checkbox {
-  display: inline-block;
-  outline: 1px solid black;
+  display: block;
+
   margin-bottom: 31px;
+  position: relative;
 }
 
 .checkbox-icon {
   width: 15px;
   height: 15px;
   border: 2px solid black;
-  border-radius: 4px;
+  border-radius: 2px;
   cursor: pointer;
   display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-p {
+  margin-left: 37px;
 }
 
 .old-checkbox:checked + .checkbox-icon {
@@ -1016,6 +1031,7 @@ h3 {
   fill: #fff;
   width: 15px;
   height: 15px;
+  background-repeat: no-repeat;
 }
 
 .text-checkbox {
@@ -1032,6 +1048,9 @@ h3 {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: #2196f3;
+  outline-color: var(--main-bgc);
+  cursor: pointer;
 }
 
 .name-text {
