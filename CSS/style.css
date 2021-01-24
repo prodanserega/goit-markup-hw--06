@@ -999,7 +999,7 @@ h3 {
 }
 
 .checkbox-icon {
-  width: 16px;
+  width: 15px;
   height: 15px;
   border: 2px solid black;
   border-radius: 4px;
@@ -1010,9 +1010,12 @@ h3 {
 .old-checkbox:checked + .checkbox-icon {
   background-color: var(--button-bgc);
   border-color: var(--button-bgc);
-  background-image: url("./img/icon-check.svg");
+  background-image: url(../img/Vector1.svg);
   background-size: contain;
   background-origin: border-box;
+  fill: #fff;
+  width: 15px;
+  height: 15px;
 }
 
 .text-checkbox {
